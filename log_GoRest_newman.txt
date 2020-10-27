@@ -1,0 +1,448 @@
+LOG comandos:
+//Verifica a versão do Node (É necessário ter o NodeJS instalado)
+C:\Users\t058442>node -v
+v12.19.0
+
+//Instala e verifica a versão do Nerman
+C:\Users\t058442>npm install -g newman
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+C:\Users\t058442\AppData\Roaming\npm\newman -> C:\Users\t058442\AppData\Roaming\npm\node_modules\newman\bin\newman.js
++ newman@5.2.0
+added 158 packages from 198 contributors in 94.094s
+
+C:\Users\t058442>newman -v
+5.2.0
+
+//Instala o newman-reporter-html
+C:\Users\t058442>npm install -g newman-reporter-html
+npm WARN newman-reporter-html@1.0.5 requires a peer of newman@4 but none is installed. You must install peer dependencies yourself.
+
++ newman-reporter-html@1.0.5
+added 12 packages from 44 contributors in 9.383s
+
+//Executando os testes 
+C:\Users\t058442>newman run c:/newman/Postman_GoRest.json
+newman
+
+Testando API com Postman
+
+□ Requisições GET
+└ Busca_Usu
+  ┌
+  │ 'Busca_Usu'
+  │ 'Script executado na pasta'
+  │ 'A variavél está incorreta'
+  └
+  GET https://gorest.co.in/public-api/users [200 OK, 4.98KB, 2.2s]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  1. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+  2. Response time is less than 200ms
+  √  Successful POST request
+  √  Content-Type is present
+  ┌
+  │ 'Executou teste do Request'
+  └
+
+└ Buscar_Usu_Especifico
+  ┌
+  │ 'Buscar_Usu_Especifico'
+  │ 'Script executado na pasta'
+  └
+  GET https://gorest.co.in/public-api/users/3 [200 OK, 1009B, 396ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  3. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+└ Autorização_Básica (Basic Auth)
+  ┌
+  │ 'Autorização_Básica (Basic Auth)'
+  │ 'Script executado na pasta'
+  └
+  GET https://postman-echo.com/basic-auth [200 OK, 360B, 599ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  4. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+└ Variaveis_Path
+  ┌
+  │ 'Variaveis_Path'
+  │ 'Script executado na pasta'
+  └
+  GET https://gorest.co.in/public-api/posts/17 [200 OK, 1.63KB, 441ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  5. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+└ Variaveis_Query
+  ┌
+  │ 'Variaveis_Query'
+  │ 'Script executado na pasta'
+  └
+  GET https://gorest.co.in/public-api/users?name=Girik Nayar&gender=female [200 OK, 1.01KB, 388ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  6. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+└ Variavel_local
+  ┌
+  │ 'Variavel_local'
+  │ 'Script executado na pasta'
+  └
+  GET https://gorest.co.in/public-api/posts/15 [200 OK, 1.55KB, 391ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  7. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+└ Buscar_Usu_Query
+  ┌
+  │ 'Buscar_Usu_Query'
+  │ 'Script executado na pasta'
+  └
+  GET https://gorest.co.in/public-api/users?name=Lívia Santana A&email=liviasantan12@15ce.com [200 OK, 1.01KB, 432ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  8. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+└ Buscar_Usu_Path
+  ┌
+  │ 'Buscar_Usu_Path'
+  │ 'Script executado na pasta'
+  └
+  GET https://gorest.co.in/public-api/users/1 [200 OK, 1009B, 393ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+  9. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+└ Variaveis_Ambiente
+  ┌
+  │ 'Variaveis_Ambiente'
+  │ 'Script executado na pasta'
+  └
+  GET {{url_base}}/public-api/users [errored]
+     getaddrinfo ENOTFOUND {{url_base}}
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+ 11. Body matches string
+  ┌
+  │ 'Executou teste da Pasta'
+  └
+
+□ Requisições POST
+└ Criar_Usu
+  ┌
+  │ 'Criar_Usu'
+  │ 'Pré script executado na requisição'
+  └
+  POST https://gorest.co.in/public-api/users [200 OK, 1.01KB, 416ms]
+  √  Successful POST request
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+
+└ Variaveis_Post
+  ┌
+  │ 'Variaveis_Post'
+  └
+  POST https://gorest.co.in/public-api/users [200 OK, 1.01KB, 401ms]
+  √  Successful POST request
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+
+└ Criar_Usu_Data
+  ┌
+  │ 'Criar_Usu_Data'
+  └
+  POST https://gorest.co.in/public-api/users [200 OK, 1.1KB, 404ms]
+  √  Successful POST request
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+
+□ Requisições Delete
+└ Deletar_Usu
+  ┌
+  │ 'Deletar_Usu'
+  └
+  DELETE https://gorest.co.in/public-api/users/5 [200 OK, 1009B, 399ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+
+□ Requisições PUT
+└ Ataualizar_Usu_PUT
+  ┌
+  │ 'Ataualizar_Usu_PUT'
+  └
+  PUT https://gorest.co.in/public-api/users/201 [200 OK, 1.15KB, 407ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+
+□ Requisições PATCH
+└ Atualizar_Usu_Patch
+  ┌
+  │ 'Atualizar_Usu_Patch'
+  └
+  PATCH https://gorest.co.in/public-api/users/13 [200 OK, 1.15KB, 404ms]
+  ┌
+  │ 'Executou teste da Coleção'
+  └
+
+┌─────────────────────────┬────────────────────┬────────────────────┐
+│                         │           executed │             failed │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              iterations │                  1 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│                requests │                 15 │                  1 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│            test-scripts │                 33 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│      prerequest-scripts │                 37 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              assertions │                 15 │                 10 │
+├─────────────────────────┴────────────────────┴────────────────────┤
+│ total run duration: 8.7s                                          │
+├───────────────────────────────────────────────────────────────────┤
+│ total data received: 6.56KB (approx)                              │
+├───────────────────────────────────────────────────────────────────┤
+│ average response time: 559ms [min: 388ms, max: 2.2s, s.d.: 486ms] │
+└───────────────────────────────────────────────────────────────────┘
+
+   #  failure                                       detail
+
+ 01.  AssertionError                                Body matches string
+                                                    expected '{"code":200,"meta":{"pagination":{"total":1834,"pages":92,"page":1,"limit":20}},"data":[{"id":4,"name":"Shanti
+                                                    Dhawan","email":"shanti_dhawan@littel-stiedemann.co","gender":"Female","status":"Inactive","created_at":"2020-10-26T03:50:04.423+05:30","updated_at":"2020-10-26T03:50:04.423+05:3…
+                                                    Varman","email":"gudakesha_varman@cronin-reilly.info","gender":"Male","status":"Inactive","created_at":"2020-10-26T03:50:04.459+05:30","updated_at":"2020-10-26T19:44:39.054+05:30…
+                                                    Devar","email":"devar_akshayakeerti@jacobson-hoppe.org","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.489+05:30","updated_at":"2020-10-26T03:50:04.489+05:30…
+                                                    Panicker","email":"ganesh_panicker@morar-heller.com","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.495+05:30","updated_at":"2020-10-26T03:50:04.495+05:30"},…
+                                                    Varma","email":"varma_gorakhnath@wehner.name","gender":"Female","status":"Active","created_at":"2020-10-26T03:50:04.539+05:30","updated_at":"2020-10-26T03:50:04.539+05:30"},{"id"…
+                                                    Guneta","email":"guneta_gaurang@braun.biz","gender":"Male","status":"Inactive","created_at":"2020-10-26T03:50:04.562+05:30","updated_at":"2020-10-26T03:50:04.562+05:30"},{"id":13…
+                                                    Santana
+                                                    Anjos","email":"liviasantana12@15ce.com","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.624+05:30","updated_at":"2020-10-26T08:51:08.107+05:30"},{"id":14,"na…
+                                                    Charuchandra
+                                                    Bandopadhyay","email":"charuchandra_bandopadhyay_gov@ziemann.com","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.648+05:30","updated_at":"2020-10-26T03:50:04…
+                                                    Manikya
+                                                    Khanna","email":"rep_manikya_khanna@homenick.name","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.663+05:30","updated_at":"2020-10-26T03:50:04.663+05:30"},{"…
+                                                    Siddhi
+                                                    Kaul","email":"prof_kaul_siddhi@koelpin.info","gender":"Male","status":"Inactive","created_at":"2020-10-26T03:50:04.677+05:30","updated_at":"2020-10-26T03:50:04.677+05:30"},{"id"…
+                                                    Ahuja","email":"bhadrak_ahuja@willms-oconner.co","gender":"Female","status":"Inactive","created_at":"2020-10-26T03:50:04.691+05:30","updated_at":"2020-10-26T03:50:04.691+05:30"},…
+                                                    Pandey","email":"kanaka_pandey@stark-donnelly.org","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.696+05:30","updated_at":"2020-10-26T03:50:04.696+05:30"},{"…
+                                                    Anand
+                                                    Agarwal","email":"anand_prof_agarwal@steuber-dickinson.biz","gender":"Male","status":"Inactive","created_at":"2020-10-26T03:50:04.727+05:30","updated_at":"2020-10-26T03:50:04.727…
+                                                    Sinha","email":"vidhya_sinha@graham-bogisich.com","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.735+05:30","updated_at":"2020-10-26T03:50:04.735+05:30"},{"i…
+                                                    Embranthiri","email":"embranthiri_udit@lind.io","gender":"Male","status":"Inactive","created_at":"2020-10-26T03:50:04.753+05:30","updated_at":"2020-10-26T03:50:04.753+05:30"},{"i…
+                                                    Bhat","email":"bhat_vrinda@hartmann.io","gender":"Female","status":"Inactive","created_at":"2020-10-26T03:50:04.774+05:30","updated_at":"2020-10-26T03:50:04.774+05:30"},{"id":24,…
+                                                    Somayaji","email":"sushma_somayaji@wuckert.info","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.808+05:30","updated_at":"2020-10-26T03:50:04.808+05:30"},{"id…
+                                                    Naik","email":"dwaipayana_naik@wehner-mertz.name","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.819+05:30","updated_at":"2020-10-26T03:50:04.819+05:30"},{"i…
+                                                    Luis Cabral da
+                                                    Silva","email":"wluissilva@live.com","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.850+05:30","updated_at":"2020-10-26T08:33:13.949+05:30"},{"id":27,"name":…
+                                                    Adikavi Adiga","email":"adikavi_adiga_dr@kub.co","gender":"Male","status":"Active","created_at":"2020-10-26T03:50:04.869+05:30","updated_at":"2020-10-26T03:50:04.869+05:30"}]}' to
+                                                    include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Busca_Usu"
+
+ 02.  AssertionError                                Response time is less than 200ms
+                                                    expected 2259 to be below 2000
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Busca_Usu"
+
+ 03.  AssertionError                                Body matches string
+                                                    expected '{"code":404,"meta":null,"data":{"message":"Resource not found"}}' to include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Buscar_Usu_Especifico"
+
+ 04.  AssertionError                                Body matches string
+                                                    expected '{"authenticated":true}' to include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Autorização_Básica (Basic Auth)"
+
+ 05.  AssertionError                                Body matches string
+                                                    expected '{"code":200,"meta":null,"data":{"id":17,"user_id":14,"title":"Libero depereo sollicito suasoria aut approbo curso defleo solitudo venio tristis trado.","body":"Comis
+                                                    pariatur tendo. Centum audeo adduco. Crudelis volutabrum aveho. Vero atrocitas conculco. Aeneus et deporto. Ratione iure sequi. Balbus totus via. Tenus adduco cavus. Curatio sulum
+                                                    ultra. Coaegresco aeneus facere. Celer bis deleniti. Victoria tepidus tabgo. Careo acervus victoria. Caste decretum vulgus. Atrocitas aequitas cenaculum. Arma defleo sit. Vobis
+                                                    uter sequi. Suadeo balbus colo. Explicabo apostolus testimonium. Adiuvo cinis suspendo. Collum degusto
+                                                    comparo.","created_at":"2020-10-26T03:50:04.654+05:30","updated_at":"2020-10-26T03:50:04.654+05:30"}}' to include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Variaveis_Path"
+
+ 06.  AssertionError                                Body matches string
+                                                    expected '{"code":200,"meta":{"pagination":{"total":0,"pages":0,"page":1,"limit":20}},"data":[]}' to include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Variaveis_Query"
+
+ 07.  AssertionError                                Body matches string
+                                                    expected '{"code":200,"meta":null,"data":{"id":15,"user_id":13,"title":"Distinctio valens minus amor considero sunt esse amicitia error quasi reiciendis coniuratio
+                                                    animi.","body":"Vinco adimpleo defungo. Saepe viduo comedo. Civis adultus viduo. Accusator coerceo est. Cursus terreo theatrum. Pel varius denuo. Spoliatio demum ara. Et caritas
+                                                    aufero. Consequuntur studio aduro. Cicuta apostolus consectetur. Barba commodi viduata. Valeo vesica votum. Abeo ut ultra. Substantia cunae strenuus. Surculus velit ater. Utroque
+                                                    caries speciosus. Amet beatae una.","created_at":"2020-10-26T03:50:04.629+05:30","updated_at":"2020-10-26T03:50:04.629+05:30"}}' to include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Variavel_local"
+
+ 08.  AssertionError                                Body matches string
+                                                    expected '{"code":200,"meta":{"pagination":{"total":0,"pages":0,"page":1,"limit":20}},"data":[]}' to include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Buscar_Usu_Query"
+
+ 09.  AssertionError                                Body matches string
+                                                    expected '{"code":404,"meta":null,"data":{"message":"Resource not found"}}' to include 'damomca@gmail.com'
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Buscar_Usu_Path"
+
+ 10.  Error                                         getaddrinfo ENOTFOUND {{url_base}}
+                                                    at request
+                                                    inside "Requisições GET / Variaveis_Ambiente"
+
+ 11.  AssertionError                                Body matches string
+                                                    object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+                                                    at assertion:0 in test-script
+                                                    inside "Requisições GET / Variaveis_Ambiente"
+												
+												
+//Executando uma coleção e passando um ambiente (-e)
+C:\Users\t058442>newman run C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy\Testando_API_com_Postman.postman_collection.json -e C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy\Go_Rest.postman_environment.json
+
+//3 Interação (-n 3)
+C:\Users\t058442>newman run -n 3 C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy\Testando_API_com_Postman.postman_collection.json -e C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy\Go_Rest.postman_environment.json
+
+//help do Newman (-h)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run -h
+Usage: newman run <collection> [options]
+
+Initiate a Postman Collection run from a given URL or path
+
+Options:
+  -e, --environment <path>              Specify a URL or path to a Postman Environment
+  -g, --globals <path>                  Specify a URL or path to a file containing Postman Globals
+  -r, --reporters [reporters]           Specify the reporters to use for this run (default: ["cli"])
+  -n, --iteration-count <n>             Define the number of iterations to run
+  -d, --iteration-data <path>           Specify a data file to use for iterations (either JSON or CSV)
+  --folder <path>                       Specify the folder to run from a collection. Can be specified multiple times to run multiple folders (default: [])
+  --global-var <value>                  Allows the specification of global variables via the command line, in a key=value format (default: [])
+  --env-var <value>                     Allows the specification of environment variables via the command line, in a key=value format (default: [])
+  --export-environment <path>           Exports the final environment to a file after completing the run
+  --export-globals <path>               Exports the final globals to a file after completing the run
+  --export-collection <path>            Exports the executed collection to a file after completing the run
+  --postman-api-key <apiKey>            API Key used to load the resources from the Postman API
+  --bail [modifiers]                    Specify whether or not to gracefully stop a collection run on encountering an error and whether to end the run with an error based on the optional modifier
+  --ignore-redirects                    Prevents Newman from automatically following 3XX redirect responses
+  -x , --suppress-exit-code             Specify whether or not to override the default exit code for the current run
+  --silent                              Prevents Newman from showing output to CLI
+  --disable-unicode                     Forces Unicode compliant symbols to be replaced by their plain text equivalents
+  --color <value>                       Enable/Disable colored output (auto|on|off) (default: "auto")
+  --delay-request [n]                   Specify the extent of delay between requests (milliseconds) (default: 0)
+  --timeout [n]                         Specify a timeout for collection run (milliseconds) (default: 0)
+  --timeout-request [n]                 Specify a timeout for requests (milliseconds) (default: 0)
+  --timeout-script [n]                  Specify a timeout for scripts (milliseconds) (default: 0)
+  --working-dir <path>                  Specify the path to the working directory
+  --no-insecure-file-read               Prevents reading the files situated outside of the working directory
+  -k, --insecure                        Disables SSL validations
+  --ssl-client-cert-list <path>         Specify the path to a client certificates configurations (JSON)
+  --ssl-client-cert <path>              Specify the path to a client certificate (PEM)
+  --ssl-client-key <path>               Specify the path to a client certificate private key
+  --ssl-client-passphrase <passphrase>  Specify the client certificate passphrase (for protected key)
+  --ssl-extra-ca-certs <path>           Specify additionally trusted CA certificates (PEM)
+  --cookie-jar <path>                   Specify the path to a custom cookie jar (serialized tough-cookie JSON)
+  --export-cookie-jar <path>            Exports the cookie jar to a file after completing the run
+  --verbose                             Show detailed information of collection run and each request sent
+  -h, --help                            display help for command
+  
+
+//Executando apenas uma pasta da coleção (--folder Requisições GET)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json --folder Requisições GET
+newman
+
+Testando API com Postman
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        0 │        0 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 2ms                       │
+├───────────────────────────────────────────────┤
+│ total data received: 0B (approx)              │
+└───────────────────────────────────────────────┘
+
+//Executando testes com delay (--delay-request 10000)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run --delay-request 10000 Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json
+
+//Executa os testes ate a primeira falha (--bail)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json --bail
+
+//Oferece mais detalhes (--verbose)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json --verbose
+
+//Executa o teste sem exibir nada no log(--silent)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json --silent
+
+//Executar passando um arquivos de dados json (-d)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run -d GoReste_Dados.json Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json
+
+////Executar passando um arquivos de dados csv (-d)
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run -d GoReste_Dados.csv Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json
+
+//Executando apartir de uma URL
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run https://api.getpostman.com/collections/13068592-978cc3ae-6c37-420e-aaba-ce93a2dc28df?apikey=PMAK-5f970e0581e18f003de4cc20-c789f2a42ea33280c18de1b512dfa1643f -- environment https://api.getpostman.com/environments?apikey=PMAK-5f970e0581e18f003de4cc20-c789f2a42ea33280c18de1b512dfa1643f
+
+//Instalando o reporter HTML
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>npm install -g newman-reporter-html
+npm WARN newman-reporter-html@1.0.5 requires a peer of newman@4 but none is installed. You must install peer dependencies yourself.
+
++ newman-reporter-html@1.0.5
+updated 1 package in 3.696s
+
+//Executando o relatório HTML
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json -r html
+
+//Executando relatório Passando template
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json --reporters cli,html --reporter-html-template templates/customHtml.hbs --reporter-html-export Export_Reports/export_GoRest.html
+
+//Salvando relatório numa pasta especifica
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json --reporters cli,html --reporter-html-template templates/htmlreqres.hbs --reporter-html-export Export_Reports/export_GoRest1.html
+
+//Relatório HtmlExtra
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy>newman run Testando_API_com_Postman.postman_collection.json -e Go_Rest.postman_environment.json -r htmlextra
