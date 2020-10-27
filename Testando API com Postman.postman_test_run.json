@@ -1,0 +1,687 @@
+{
+	"id": "6c07e60d-c893-4e07-b302-6d4bc11113ff",
+	"name": "Testando API com Postman",
+	"timestamp": "2020-10-27T14:58:31.959Z",
+	"collection_id": "978cc3ae-6c37-420e-aaba-ce93a2dc28df",
+	"folder_id": 0,
+	"environment_id": "cf43c2db-044f-4c17-bc49-82585fff1faa",
+	"totalPass": 40,
+	"totalFail": 35,
+	"results": [
+		{
+			"id": "67e72eca-232e-4fec-bff7-49e2db4f6ebe",
+			"name": "Busca_Usu",
+			"time": 408,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true,
+				"Response time is less than 200ms": true,
+				"Successful POST request": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				1555,
+				403,
+				396,
+				413,
+				408
+			],
+			"allTests": [
+				{
+					"Body matches string": true,
+					"Response time is less than 200ms": true,
+					"Successful POST request": true,
+					"Content-Type is present": true
+				},
+				{
+					"Body matches string": true,
+					"Response time is less than 200ms": true,
+					"Successful POST request": true,
+					"Content-Type is present": true
+				},
+				{
+					"Body matches string": true,
+					"Response time is less than 200ms": true,
+					"Successful POST request": true,
+					"Content-Type is present": true
+				},
+				{
+					"Body matches string": true,
+					"Response time is less than 200ms": true,
+					"Successful POST request": true,
+					"Content-Type is present": true
+				},
+				{
+					"Body matches string": true,
+					"Response time is less than 200ms": true,
+					"Successful POST request": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "23619554-9603-47aa-a428-55d3c7e0fd48",
+			"name": "Buscar_Usu_Especifico",
+			"time": 392,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				389,
+				389,
+				384,
+				393,
+				392
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "ee35159d-5481-41f3-a03e-3e05087196c1",
+			"name": "Autorização_Básica (Basic Auth)",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				118,
+				142,
+				126,
+				168,
+				117
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "c087a4da-6763-4589-bfdd-51b55b0cd304",
+			"name": "Variaveis_Path",
+			"time": 394,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				406,
+				397,
+				391,
+				394,
+				394
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "4fe87ff8-2c49-4fe4-b1d0-16e36d7019df",
+			"name": "Variaveis_Query",
+			"time": 410,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				395,
+				413,
+				397,
+				401,
+				410
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "78b1a8f1-a313-4848-bbb1-4be2ff0222f4",
+			"name": "Variavel_local",
+			"time": 396,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				417,
+				405,
+				400,
+				392,
+				396
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "a5f1058e-1910-4cf3-90f9-6d99ee438fd5",
+			"name": "Buscar_Usu_Query",
+			"time": 393,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				410,
+				398,
+				395,
+				402,
+				393
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "169a69f9-1c35-4cc3-aacb-ecc92e87e18b",
+			"name": "Buscar_Usu_Path",
+			"time": 397,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				393,
+				391,
+				396,
+				434,
+				397
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				},
+				{
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "6db87d81-af1c-4dba-ae5e-44ca962b6838",
+			"name": "Variaveis_Ambiente",
+			"time": 432,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				421,
+				401,
+				394,
+				403,
+				432
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				},
+				{
+					"Body matches string": true
+				},
+				{
+					"Body matches string": true
+				},
+				{
+					"Body matches string": true
+				},
+				{
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "186426b9-70f7-44c8-9b2f-400a7ba4ab9d",
+			"name": "Criar_Usu",
+			"time": 396,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				409,
+				430,
+				394,
+				405,
+				396
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "6480fe58-9c4a-431d-b612-0b5220cb023b",
+			"name": "Variaveis_Post",
+			"time": 395,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				398,
+				419,
+				401,
+				421,
+				395
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "b9c309b1-de49-4cd6-b90b-4ce9155306b6",
+			"name": "Criar_Usu_Data",
+			"time": 407,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				399,
+				391,
+				419,
+				396,
+				407
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				},
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "db932f69-fdd9-44bf-beef-5c56935146e5",
+			"name": "Deletar_Usu",
+			"time": 393,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				409,
+				390,
+				395,
+				389,
+				393
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "8b48a7ed-c036-4f90-8864-54c2ca7a2cf3",
+			"name": "Ataualizar_Usu_PUT",
+			"time": 394,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				402,
+				407,
+				399,
+				396,
+				394
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "92e21afc-7afd-49c2-bb59-09273496ea1d",
+			"name": "Atualizar_Usu_Patch",
+			"time": 438,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				395,
+				399,
+				396,
+				403,
+				438
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 29946,
+	"collection": {
+		"requests": [
+			{
+				"id": "67e72eca-232e-4fec-bff7-49e2db4f6ebe",
+				"method": "GET"
+			},
+			{
+				"id": "23619554-9603-47aa-a428-55d3c7e0fd48",
+				"method": "GET"
+			},
+			{
+				"id": "ee35159d-5481-41f3-a03e-3e05087196c1",
+				"method": "GET"
+			},
+			{
+				"id": "c087a4da-6763-4589-bfdd-51b55b0cd304",
+				"method": "GET"
+			},
+			{
+				"id": "4fe87ff8-2c49-4fe4-b1d0-16e36d7019df",
+				"method": "GET"
+			},
+			{
+				"id": "78b1a8f1-a313-4848-bbb1-4be2ff0222f4",
+				"method": "GET"
+			},
+			{
+				"id": "a5f1058e-1910-4cf3-90f9-6d99ee438fd5",
+				"method": "GET"
+			},
+			{
+				"id": "169a69f9-1c35-4cc3-aacb-ecc92e87e18b",
+				"method": "GET"
+			},
+			{
+				"id": "6db87d81-af1c-4dba-ae5e-44ca962b6838",
+				"method": "GET"
+			},
+			{
+				"id": "186426b9-70f7-44c8-9b2f-400a7ba4ab9d",
+				"method": "POST"
+			},
+			{
+				"id": "6480fe58-9c4a-431d-b612-0b5220cb023b",
+				"method": "POST"
+			},
+			{
+				"id": "b9c309b1-de49-4cd6-b90b-4ce9155306b6",
+				"method": "POST"
+			},
+			{
+				"id": "db932f69-fdd9-44bf-beef-5c56935146e5",
+				"method": "DELETE"
+			},
+			{
+				"id": "8b48a7ed-c036-4f90-8864-54c2ca7a2cf3",
+				"method": "PUT"
+			},
+			{
+				"id": "92e21afc-7afd-49c2-bb59-09273496ea1d",
+				"method": "PATCH"
+			}
+		]
+	}
+}
