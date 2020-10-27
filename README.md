@@ -17,6 +17,6 @@ Aqui vamos ver:
 - Data: json e csv (arquivos de testes do projeto anexos)
 - Log
 - Comandos no Newman
-- Relatórios: Html e json (arquivos de testes do projeto anexos)
+- Relatórios: Html, json e uso de templates para gerar relatórios (arquivos de testes do projeto anexos)
 - CI Jenkins
 
