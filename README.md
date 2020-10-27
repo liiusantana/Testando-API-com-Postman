@@ -1,2 +1,5 @@
-# liiusantana-Testando-API-com-Postman
-Testando API com Postman - Go Rest (https://gorest.co.in/)
+Testando API com Postman
+API usada nos testes: Go Rest (https://gorest.co.in/)
+
+Aqui vamos ver:
+- 
