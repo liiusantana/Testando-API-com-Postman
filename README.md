@@ -1,7 +1,7 @@
 Testando API com Postman
 
-> API usada nos testes: Go Rest (https://gorest.co.in/)
-> Published Collection: https://documenter.getpostman.com/view/13068592/TVYF8K2Y
+> * API usada nos testes: Go Rest (https://gorest.co.in/)
+> * Published Collection: https://documenter.getpostman.com/view/13068592/TVYF8K2Y
 
 Aqui vamos ver:
 - Requisições: GET, POST, DELETE, PUT e PATCH
